@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer:100,200,300,400,500,600,700|Beth+Ellen:100,200,300,400,500,600,700|Pacifico:100,200,300,400,500,600,700');
+
+/*-------------------------------Website Name */
+
+.name {
+    font-family: 'Beth=Ellen';
+     font-weight: 100;
+    font-size: 80px;
+    margin-top: 70px;
+    text-align: center;
+    color: #563f46;
+}
+
+/*-------------------------------Background */
+
+body {
+    background-color: #c8c3cc;
+}
+
+/*-------------------------------Social */
+
+.social-links {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 30px;
+    height: 30px;
+    padding: 12px 0;
+    border-radius: 20%;
+    font-size: 25px;
+    line-height: 7px;
+    text-align: center;
+    color: #8ca3a3;
+    background: #c8c3cc;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+/*-------------------------------menu */
+
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menucontainer {
+    font-size: 0;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+#nav li {
+    font-size: 20px;
+    font-family: 'Beth+Ellen';
+    padding: 0;
+}
+
+.menuitem {
+    text-align: center;
+    padding: 0;
+}
+
+.body {
+    text-align: center;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #563f46;
+}
+
+.hvr-underline-from-center:before {
+    background-color: #563f46;
+    color: #ffffff;
+}
+
+
+.a:hover {
+    text-decoration: none;
+}
+
+/*-------------------------------Footer */
+
+
+footer {
+    background-color: #563f46;	
+    color: #ffffff;
+    min-height: 120px;
+    margin: 0;
+}
+
+.address {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Beth+Ellen";
+    padding-top: 20px;
+    font-size: 20px;
+}
+.email {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Beth+Ellen";
+    padding: 10px;
+    font-size: 20px;
+}
+
+.social-links2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.social-links2 li a i {
+    width: 30px;
+    height: 30px;
+    padding: 12px 0;
+    border-radius: 20%;
+    font-size: 25px;
+    line-height: 7px;
+    text-align: center;
+    color: #ffffff;
+    background: #5563f46;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}

@@ -3,18 +3,27 @@
 /*-------------------------------Website Name */
 
 .name {
-    font-family: 'Beth=Ellen';
+    font-family: "Beth+Ellen";
      font-weight: 100;
     font-size: 80px;
     margin-top: 70px;
     text-align: center;
-    color: #563f46;
+    color: #808080;
+}
+
+.name3 {
+    font-family: "Beth+Ellen";
+     font-weight: 60;
+    font-size: 50px;
+    margin-top: 70px;
+    text-align: center;
+    color: #808080;
 }
 
 /*-------------------------------Background */
 
 body {
-    background-color: #c8c3cc;
+    background: #fff5ee;
 }
 
 /*-------------------------------Social */
@@ -33,7 +42,7 @@ body {
     line-height: 7px;
     text-align: center;
     color: #8ca3a3;
-    background: #c8c3cc;
+    background: #fff5ee;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -72,12 +81,12 @@ body {
 .menuitem a {
     width: 100%;
     text-decoration: none;
-    color: #563f46;
+    color: #808080;
 }
 
 .hvr-underline-from-center:before {
-    background-color: #563f46;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #d3d3d3;
 }
 
 
@@ -89,7 +98,7 @@ body {
 
 
 footer {
-    background-color: #563f46;	
+    background-color: #666633;	
     color: #ffffff;
     min-height: 120px;
     margin: 0;
@@ -130,4 +139,103 @@ footer {
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+}
+
+/*-------------------------------Photos */
+
+.purchased {
+    font-family: 'pacifico';
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    color: #808080;
+}
+
+.gender {
+    color: #808080;
+    font-family: "Beth+Ellen";
+}
+
+.dc-chart rect.bar {
+fill: #666633;
+}
+
+.gender-balance {
+    color: #808080;
+}
+
+.info {
+    font-family: "pacifico";
+    color: #808080;
+    text-align: center;
+}
+
+.info2 {
+    font-family: "pacifico";
+    color: #808080;
+    text-align: center;
+}
+
+.info3 {
+    font-family: "pacifico";
+    color: #808080;
+    text-align: center;
+}
+
+.shade {
+    color: #ffffff;
+    font-family: "Beth+Ellen";
+}
+
+/*-------------------------------contact */
+
+.contact-heading {
+    font-family: "Beth+Ellen";
+    text-align: center;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+.text-center {
+    font-family: "pacifico";
+    text-align: center;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+    font-family: "Beth+Ellen";
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #666633;
+    color: #fafafa;
+    font-family: "Beth+Ellen";
+}
+
+.chat {
+   font-family: "Beth+Ellen";
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #808080;  
+}
+
+.number {
+     font-family: "pacifico";
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #808080;
 }

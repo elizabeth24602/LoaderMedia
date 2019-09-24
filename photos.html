@@ -86,13 +86,13 @@
                         <a href="photos.html" class="hvr-underline-from-center"><span>Photos</span></a>
                     </li>
                     <li class="col-4 col-sm-2 ui-menu-color-pricing list-inline-item menuitem">
-                        <a href="photos.html" class="hvr-underline-from-center"><span>Pricing</span></a>
+                        <a href="pricing.html" class="hvr-underline-from-center"><span>Pricing</span></a>
                     </li>
                     <li class="col-4 col-sm-2 ui-menu-color-gallery list-inline-item menuitem">
-                        <a href="music.html" class="hvr-underline-from-center"><span>Gallery</span></a>
+                        <a href="gallery.html" class="hvr-underline-from-center"><span>Gallery</span></a>
                     </li>
                     <li class="col-4 col-sm-2 ui-menu-color-contact list-inline-item menuitem">
-                        <a href="music.html" class="hvr-underline-from-center"><span>Contact</span></a>
+                        <a href="contact.html" class="hvr-underline-from-center"><span>Contact</span></a>
                     </li>
                 </ul>
             </div>
@@ -100,7 +100,7 @@
         
         <div class="row no-gutters">
             <div class="col headings">
-                <h1 class="name">Photo Name</h1>
+                <h3 class="name3">Picture Data</h3>
             </div>
         </div>
     </header>
@@ -126,34 +126,11 @@
     </div>
     
     <div class="col-sm-4">
-        <div id="container" style="width: 100%; height: 100%"></div>
-        <script>
-        anychart.onDocumentReady(function() {
-            var data = [
-    {x: "Motor Vehicles", value: 53},
-    {x: "Animals", value: 37},
-    {x: "Landscape", value: 28},
-    {x: "Family Portraits", value: 15},
-];
-  var chart = anychart.pie();
-
-  chart.title("style");
-
-  chart.data(data);
-
-  chart.container('container');
-  chart.draw();
-
-});
-
-chart.legend().position("right");
-chart.legend().itemsLayout("vertical");
-
-        </script>
+         <div id="rank-distribution"></div>
     </div>
     
     <div class="col-sm-4">
-        <div id="gender-balance" class="gender"></div>
+        <div id="average-salary" class="shade"></div>
     </div>
     </div>
     

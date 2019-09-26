@@ -23,12 +23,7 @@
 /*-------------------------------Background */
 
 body {
-  background-image: url("landscape.jpg");
   background-color: #fff5ee;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*-------------------------------Social */
@@ -139,7 +134,6 @@ footer {
     line-height: 7px;
     text-align: center;
     color: #ffffff;
-    background: #5563f46;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -148,24 +142,14 @@ footer {
 
 /*-------------------------------Home */
 
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bg {
-  /* The image used */
-  background-image: url("Assests/images/horses.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
+.index {
+  background-image: url("../images/landscape.jpg");
+  background-color: #fff5ee;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 /*-------------------------------Photos */
 .purchased {
     font-family: 'pacifico';

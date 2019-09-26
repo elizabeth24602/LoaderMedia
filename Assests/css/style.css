@@ -17,13 +17,18 @@
     font-size: 50px;
     margin-top: 70px;
     text-align: center;
-    color: #808080;
+    color: #595959;  
 }
 
 /*-------------------------------Background */
 
 body {
-    background: #fff5ee;
+  background-image: url("landscape.jpg");
+  background-color: #fff5ee;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*-------------------------------Social */
@@ -141,8 +146,27 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
-/*-------------------------------Photos */
+/*-------------------------------Home */
 
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("Assests/images/horses.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*-------------------------------Photos */
 .purchased {
     font-family: 'pacifico';
     font-weight: 100;
@@ -188,6 +212,25 @@ fill: #666633;
     font-family: "Beth+Ellen";
 }
 
+/*-------------------------------Gallery */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
 /*-------------------------------contact */
 
 .contact-heading {
@@ -227,15 +270,34 @@ button[type="submit"] {
 .chat {
    font-family: "Beth+Ellen";
     font-weight: 100;
-    margin-top: 25px;
+    margin-top: 180px;
     margin-bottom: 20px;
-    color: #808080;  
+    text-align: center;
+    color: #595959;  
 }
 
 .number {
      font-family: "pacifico";
     font-weight: 100;
-    margin-top: 25px;
+    margin-top: 125px;
     margin-bottom: 20px;
+    text-align: center;
     color: #808080;
+}
+
+.laptop {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.phone {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
 }

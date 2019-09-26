@@ -81,7 +81,7 @@ body {
 .menuitem a {
     width: 100%;
     text-decoration: none;
-    color: #fff5ee;
+    color: #808080;
 }
 
 .hvr-underline-from-center:before {
@@ -100,15 +100,13 @@ body {
 footer {
     background-color: #666633;	
     color: #ffffff;
-    min-height: 120px;
-    margin: 0;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
 }
-}
+
 
 .address {
     color: #ffffff;
@@ -149,7 +147,7 @@ footer {
 /*-------------------------------Home */
 
 .index {
-  background-image: url("../images/blackandwhite.jpg");
+  background-image: url("../images/bryn.jpg");
   background-color: #fff5ee;
   height: 500px;
   background-position: center;
@@ -291,4 +289,5 @@ button[type="submit"] {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 90%;
+  border-radius: 8px;
 }

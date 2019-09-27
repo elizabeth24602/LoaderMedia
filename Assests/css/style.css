@@ -78,6 +78,13 @@ body {
     text-align: center;
 }
 
+
+.menuitem2 a {
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .menuitem a {
     width: 100%;
     text-decoration: none;
@@ -100,11 +107,9 @@ body {
 .bottom {
     background-color: #666633;	
     color: #ffffff;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 20%;
     text-align: center;
 }
 
@@ -207,17 +212,19 @@ fill: #666633;
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 10px;
+  margin-left: 10px
 }
 
 /* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   padding: 0 4px;
+  margin-bottom: 10px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 20px;
   vertical-align: middle;
 }
 

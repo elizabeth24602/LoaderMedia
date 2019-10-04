@@ -25,6 +25,11 @@
     <script type="text/javascript" src="static/js/dc.min.js"></script>
     <script type="text/javascript" src="static/js/queue.min.js"></script>
     <script type="text/javascript" src="static/js/graph.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
   
 </head>
 <body>
@@ -104,10 +109,67 @@
     </header>
 
     <section>
+        
+        <script>
+            Highcharts.chart('container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Size Purchased'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'A4 Canvas',
+            y: 61.41,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'A3 Canvas',
+            y: 11.84
+        }, {
+            name: 'A4 Framed',
+            y: 10.85
+        }, {
+            name: 'A5 Framed',
+            y: 4.67
+        }, {
+            name: 'A3 Framed',
+            y: 4.18
+        }, {
+            name: 'A5 Canvas',
+            y: 7.05
+        }]
+    }]
+    
+            });
+  </script>
+    
+    
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
     
     </section>
 
-    <footer class="container-fluid bottom">
+    <footer class="bottom">
     <div id="footer-details" class="row">
         <div class="col-sm-12">
             <p class="address">Address</p>

@@ -100,56 +100,182 @@
         
         <div class="row no-gutters">
             <div class="col headings">
-                <h3 class="name3">Picture Data</h3>
+                <h3 class="name3">Photography</h3>
             </div>
         </div>
     </header>
 
 <section>
-    <div class="container-fluid">
+
     
-    <div class="row">
-    <div class="col-sm-4">
-         <h3 class="purchased">Gender</h3>
+<div class="row">
+    <div class="col-sm-12">
+        <button class="accordion">Car Photography</button>
+            <div class="panel">
+                  <p>Taking photos of cars is such an interesting thing on its own. It’s like science. Every time I shoot a car I learn something from it! The best time to shoot will be a few minutes after sunset (or a few minutes before sunrise). Use a tripod and get that perfect soft light on the paint! You must be very careful of what reflects in the car. Have a look around you and look closely at the car and see what reflects on its surface. A car (especially a new shiny one) is like a mirror. Try and have an open space behind you like a field. Try and avoid shooting with buildings or trees behind you. One of the most important things you want to show in your car pictures are the design lines of the car, or as I like to call it, ‘her curves’. Reflections can spoil these curves.
+  
+                        Also be very careful not to have your own reflection in the photo. If you can’t avoid your own reflection its best to put the camera on a tripod, set the timer and move out of the shot
+                        All types of paint react differently at different times of the day, with different light. Most colors hate direct sunlight, but some color works really well in direct sunlight.</p>
+            </div>
+
+        <button class="accordion">Animal Photography</button>
+            <div class="panel">
+                <p>Not all great wildlife photography is of predators or even large animals. Some of the most compelling images are those of small creatures: birds, insects, or as in the case above, ground squirrels.
+                Even creating images of common animals in your backyard, or local parks, is a great way to learn the necessary skills for animal photography.
+                When I think about wildlife photography techniques, there are a few things that stand out. Surprisingly, the first that come to mind have nothing to do with equipment. However, your gear does play an important role. Your kit for wildlife does not need to be huge, but a few things will prove useful:
+        <ul class=unordered>
+            <li>Camera- obviously</li>
+            <li>Telephoto- a long lens is a near-necessity in wildlife photography, and lenses from 200mm to 600mm are standard.</li>
+            <li>A wide angle – this one may come as a surprise, but I’ve made some of my favorite animal images with a wide angle
+            Tripod</li>
+            What brand, sensor size, and type of camera you choose is completely up to you. Many cameras, even some advanced point and shoots, will work great for wildlife.
+        </ul>
+            But don’t let you gear hold you back. Be creative and shoot with what you have. You don’t always need a big telephoto lens.</p>
+        </div>
+
+        <button class="accordion">Landscape Photography</button>
+            <div class="panel">
+                <p>My first love in photography when I first got my trusty old Minolta SLR as a teenager was landscape photography. There’s something about getting out in nature with the challenge of capturing some of the amazing beauty that you see. Perhaps it fits with my personality type – but I loved the quietness and stillness of waiting for the perfect moment for the shot, scoping out an area for the best vantage point and then seeing the way that the light changed a scene over a few hours.</p>
+            </div>
+            
+        <button class="accordion">B&W Photography</button>
+            <div class="panel">
+                <p>Black and white photography is the oldest style of photography. Every photograph that you can think of, has the potential to be black and white.
+                It depends on your imagination and a few key skills. Every area of photography is different. They have their own set of requirements when it comes to B&W photography.
+                Textures and contrast are stronger in black and white. Black and white can bring out emotions more strongly than color. This is because it removes distractions from a portrait. But color can make you focus on a particular feeling, like warm or cold.</p>
+            </div>
     </div>
-    <div class="col-sm-4">
-         <h3 class="purchased">Style</h3>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<div class="row">
+  <div class="column">
+    <img src="Assests/images/car1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Assests/images/lark.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Assests/images/nature.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Assests/images/oldcars.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="Assests/images/car1.jpg" style="width:100%">
     </div>
-    <div class="col-sm-4">
-         <h3 class="purchased">Shade</h3>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="Assests/images/lark.jpg" style="width:100%">
     </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="Assests/images/nature.jpg" style="width:100%">
     </div>
     
-    <div class="row">
-    <div class="col-sm-4">
-        <div id="gender-balance" class="gender"></div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="Assests/images/oldcars.jpg" style="width:100%">
     </div>
-    
-    <div class="col-sm-4">
-         <div id="rank-distribution"></div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
     </div>
-    
-    <div class="col-sm-4">
-        <div id="average-salary" class="shade"></div>
+
+    <div class="column">
+      <img class="demo" src="Assests/images/car1.jpg" onclick="currentSlide(1)" alt="car1">
     </div>
+
+    <div class="column">
+      <img class="demo" src="Assests/images/lark.jpg" onclick="currentSlide(2)" alt="lark">
     </div>
-    
-    <div class="row">
-    <div class="col-sm-4">
-        <p class="info">This Chart is to show the ammount of photos purchased by men and the amount purchased by women.</p>
+
+    <div class="column">
+      <img class="demo" src="Assests/images/nature.jpg" onclick="currentSlide(3)" alt="nature">
     </div>
-    <div class="col-sm-4">
-        <p class="info2">This Chart is to show which style of photo is most popular.</p>
+
+    <div class="column">
+      <img class="demo" src="Assests/images/oldcars.jpg" onclick="currentSlide(3)" alt="oldcars">
     </div>
-    <div class="col-sm-4">
-        <p class="info3">This Chart is to show the ammount of photos purchased in Full Colour VS Black and White.</p>
-    </div>
-    </div>
-    
-    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
     </section>
 
-    <footer class="container-fluid bottom">
+    <footer class="bottom">
     <div id="footer-details" class="row">
         <div class="col-sm-12">
             <p class="address">Address</p>

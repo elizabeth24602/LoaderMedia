@@ -139,3 +139,54 @@ function show_rank_distribution(ndx) {
         .legend(dc.legend().x(320).y(20).itemHeight(15).gap(5))
         .margins({top: 10, right: 100, bottom: 30, left: 30});
 }
+
+
+Highcharts.chart('container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Size Purchased'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'A4 Canvas',
+            y: 61.41,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'A3 Canvas',
+            y: 11.84
+        }, {
+            name: 'A4 Framed',
+            y: 10.85
+        }, {
+            name: 'A5 Framed',
+            y: 4.67
+        }, {
+            name: 'A3 Framed',
+            y: 4.18
+        }, {
+            name: 'A5 Canvas',
+            y: 7.05
+        }]
+    }]
+});

@@ -71,39 +71,210 @@
                 </ul>
             </div>
         </div>
-         <div id="mySidebar" class="sidebar">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-              <a href="index.html">Bio</a>
-              <a href="bio.html">Bio</a>
-              <a href="pricing.html">Pricing</a>
-              <a href="gallery.html">Gallery</a>
-              <a href="contact.html">Contact</a>
+                 <div class="row no-gutters">
+            <div class="col">
+                <ul id="nav" class="list-inline menucontainer">
+                    <li class="col-4 col-sm-2 ui-menu-color-home list-inline-item menuitem">
+                        <a href="index.html" class="hvr-underline-from-center"><span>Home</span></a>
+                    </li>
+                    <li class="col-4 col-sm-2 ui-menu-color-bio list-inline-item menuitem">
+                        <a href="bio.html" class="hvr-underline-from-center"><span>About</span></a>
+                    </li>
+                     <li class="col-4 col-sm-2 ui-menu-color-photos list-inline-item menuitem">
+                        <a href="photos.html" class="hvr-underline-from-center"><span>Photos</span></a>
+                    </li>
+                    <li class="col-4 col-sm-2 ui-menu-color-pricing list-inline-item menuitem">
+                        <a href="pricing.html" class="hvr-underline-from-center"><span>Pricing</span></a>
+                    </li>
+                    <li class="col-4 col-sm-2 ui-menu-color-gallery list-inline-item menuitem">
+                        <a href="gallery.html" class="hvr-underline-from-center"><span>Gallery</span></a>
+                    </li>
+                    <li class="col-4 col-sm-2 ui-menu-color-contact list-inline-item menuitem">
+                        <a href="contact.html" class="hvr-underline-from-center"><span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div id="main">
-          <button class="openbtn" onclick="openNav()">☰ </button> 
-        </div>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-        }
-    </script>
         
         <div class="row no-gutters">
             <div class="col headings">
-                <h3 class="name3">A Little bit About Me</h3>
+                <h3 class="name3">About Me</h3>
             </div>
         </div>
     </header>
 
     <section>
+        
+      <div class="row">
+        <div class="col-sm-12">
+          <img class="silhouette" src="Assests/images/silhouette.jpg" alt="silhouette">
+        </div>
+      </div>
+      
+      <div class="row">
+      <div class="col-sm-8 bio">
+          <p>Born in Herefordshire, England and raised in and currently live in Ledbury. It is a quaint town with some amazing lanscapes just sitting on your doorstep waiting for a picture to be taken.<br>
+          Taking pictures has been a part of my life for as long as I can remember. As a child, I would routinely shoot portraits of our family dogs.<br>
+          Although creating images has been a constant passion and interest, I spent my college years studying agriculture. I got a job looking after the landscape of the Malvern Hills. I always persured photography on the side, as a hobby more than anything, just messing around with light and shadow.<br>
+          It may appear off topic, but I gained immeasurable insight into what it means to work hard, with passion, vision, intention, and artistry. My work is an obsession, so every day and every shoot is an opportunity to learn and to further develop my craft - discovering more about myself, and my fellow earthlings.<br>
+          I primarily shoot digital, but I have a love for analog and darkroom work as well. I strive to create photographs that not only capture a moment, but also capture a feeling and essence.
+          I'd love to hear from you, so feel free to contact me.<br>
+          Thank you for taking time to look at my site and work; I hope to meet you in the near future.</p>
+      </div>
+      
+      <div class="col-sm-4 container">
+          <img src="Assests/images/camera2.jpg" class="camera2"></img>
+      </div>
+      </div>
+      
+      <div class="row">
+          <!-- MAIN (Center website) -->
+<div class="main">
+
+<h2 class="portfolio">Potfolio</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Landscape</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="Assests/images/nature.jpg" alt="nature" style="width:100%">
+      <h4>Nature</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="Assests/images/landscape.jpg" alt="Landscape" style="width:100%">
+      <h4>Landscape</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="Assests/images/endangered.jpg" alt="endangered" style="width:100%">
+      <h4>Gardens</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+   <div class="column nature">
+    <div class="content">
+    <img src="Assests/images/countryside.jpg" alt="countryside" style="width:100%">
+      <h4>Countryside</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="Assests/images/car1.jpg" alt="Car" style="width:100%">
+      <h4>Car1</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="Assests/images/car2.jpg" alt="Car" style="width:100%">
+      <h4>Car2</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="Assests/images/car3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="Assests/images/car4.jpg" alt="Car" style="width:100%">
+      <h4>Car4</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+
+  <div class="column animals">
+    <div class="content">
+      <img src="Assests/images/horses.jpg" alt="Horses" style="width:100%">
+      <h4>Horses</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="Assests/images/lark.jpg" alt="lark" style="width:100%">
+      <h4>Lark</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column animals">
+    <div class="content">
+    <img src="Assests/images/bryn.jpg" alt="Bryn" style="width:100%">
+      <h4>Bryn</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+      </div>
     
     </section>
 

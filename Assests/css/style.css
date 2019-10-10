@@ -161,6 +161,17 @@ body {
   background-size: cover;
   text-align: center;
   background-attachment: scroll;
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 body {
@@ -253,8 +264,6 @@ body {
   margin-bottom: 20px;
 }
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -272,27 +281,22 @@ body {
   margin: 10px -16px;
 }
 
-/* Add padding BETWEEN each column */
 .row,
 .row > .column {
   padding: 8px;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide all elements by default */
 }
 
-/* Clear floats after rows */ 
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .content {
   background-color: #dbceb0;
   padding: 10px;
@@ -300,12 +304,10 @@ body {
   text-align: center;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -325,7 +327,7 @@ body {
   color: #808080;
 }
 
-/*-----------------------------Photos */
+/*-----------------------------Photos (Used W3 Schools to help with code, made my own modifications and altered coding)*/
 
 .accordion {
   background-color: #666633;
@@ -359,8 +361,6 @@ body {
   font-size: 20px;
 }
 
-
-
 .row > .column {
   padding: 0 8px;
 }
@@ -371,13 +371,11 @@ body {
   clear: both;
 }
 
-/* Create four equal columns that floats next to eachother */
 .column {
   float: left;
   width: 25%;
 }
 
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -391,7 +389,6 @@ body {
   background-color: #666633;
 }
 
-/* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fff5ee;
@@ -401,7 +398,6 @@ body {
   max-width: 1200px;
 }
 
-/* The Close Button */
 .close {
   color: white;
   position: absolute;
@@ -418,12 +414,10 @@ body {
   cursor: pointer;
 }
 
-/* Hide the slides by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -441,19 +435,16 @@ body {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: #fff5ee;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #000000;
   font-size: 12px;
@@ -462,7 +453,6 @@ body {
   top: 0;
 }
 
-/* Caption text */
 .caption-container {
   text-align: center;
   font-family: "Beth+Ellen"
@@ -485,6 +475,48 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*-------------------------------Pricing */
+
+/*-------------------------------Cars, Landscape, Anoimals */
+.canvas {
+  color: #808080;
+  font-family: "Beth+Ellen";
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Beth+Ellen";
+  color: #808080;
+  background-color: #fff5ee;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #fff5ee;
+  background-color: #666633;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }
 
 /*-------------------------------Gallery */

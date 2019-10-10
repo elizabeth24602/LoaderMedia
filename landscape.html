@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="Assests/css/style.css" type="text/css" />
     
     <title>Loader Media</title>
-
-    <script src="https://code.highcharts.com/highcharts.js"></script>    
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+     <script type="text/javascript" src="static/js/d3.min.js"></script>
+    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="static/js/dc.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.min.js"></script>
+    <script type="text/javascript" src="static/js/graph.js"></script>
   
 </head>
 <body>
@@ -77,10 +78,10 @@
                         <a href="index.html" class="hvr-underline-from-center"><span>Home</span></a>
                     </li>
                     <li class="col-4 col-sm-2 ui-menu-color-bio list-inline-item menuitem">
-                        <a href="bio.html" class="hvr-underline-from-center"><span>About</span></a>
+                        <a href="bio.html" class="hvr-underline-from-center"><span>Bio</span></a>
                     </li>
                      <li class="col-4 col-sm-2 ui-menu-color-photos list-inline-item menuitem">
-                        <a href="photos.html" class="hvr-underline-from-center"><span>Photography</span></a>
+                        <a href="photos.html" class="hvr-underline-from-center"><span>Photos</span></a>
                     </li>
                     <li class="col-4 col-sm-2 ui-menu-color-pricing list-inline-item menuitem">
                         <a href="pricing.html" class="hvr-underline-from-center"><span>Pricing</span></a>
@@ -95,97 +96,127 @@
             </div>
         </div>
         
-        <div class="row no-gutters">
-            <div class="col headings">
-                <h3 class="name3">Pricing</h3>
-            </div>
-        </div>
-        
-        <div id="container"></div>
-    </header>
-
-    <section>
-<div class="row">
-    <div class="col-sm-12">
-        <h3>Purchase</h3>
-    </div>
-</div>
          <div class="row no-gutters">
-            <div class="col">
+            <div class="col-sm-12">
                 <ul id="nav" class="list-inline menucontainer">
-                    <li class="col-4 col-sm-2 ui-menu-color-bio list-inline-item menuitem">
+                    <li class="col-4 col-sm-2 ui-menu-color-pricing list-inline-item menuitem">
+                        <a href="pricing.html" class="hvr-underline-from-center"><span>Back to Pricing</span></span></a>
+                    </li>
+                    <li class="col-4 col-sm-2 ui-menu-color-cars list-inline-item menuitem">
                         <a href="cars.html" class="hvr-underline-from-center"><span>Cars</span></a>
                     </li>
-                     <li class="col-4 col-sm-2 ui-menu-color-photos list-inline-item menuitem">
+                     <li class="col-4 col-sm-2 ui-menu-color-landscape list-inline-item menuitem">
                         <a href="landscape.html" class="hvr-underline-from-center"><span>Landscape</span></a>
                     </li>
-                    <li class="col-4 col-sm-2 ui-menu-color-pricing list-inline-item menuitem">
+                    <li class="col-4 col-sm-2 ui-menu-color-animals list-inline-item menuitem">
                         <a href="animals.html" class="hvr-underline-from-center"><span>Animals</span></a>
                     </li>
                 </ul>
             </div>
         </div>
         
-        <div id="highcharts--uwbVxyR"><script src="https://cloud.highcharts.com/inject/-uwbVxyR/" defer="defer"></script></div>
-        
-        <script> /*highcharts used for javascript*/
-            Highcharts.chart('container', {
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
-    },
-    title: {
-        text: 'Size Purchased'
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: false
-            },
-            showInLegend: true
-        }
-    },
-    series: [{
-        name: 'Brands',
-        colorByPoint: true,
-        data: [{
-            name: 'A4 Canvas',
-            y: 61.41,
-            sliced: true,
-            selected: true
-        }, {
-            name: 'A3 Canvas',
-            y: 11.84
-        }, {
-            name: 'A4 Framed',
-            y: 10.85
-        }, {
-            name: 'A5 Framed',
-            y: 4.67
-        }, {
-            name: 'A3 Framed',
-            y: 4.18
-        }, {
-            name: 'A5 Canvas',
-            y: 7.05
-        }]
-    }]
+        <div class="row no-gutters">
+            <div class="col headings">
+                <h3 class="name3">Animals</h3>
+            </div>
+        </div>
+    </header>
+
+    <section>
     
-            });
-            
-  </script>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="canvas">Canvas</h2>
+        </div>
+    </div>
     
+    <div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+          <img src="Assests/images/nature.jpg" alt="nature" style="width:100%">
+          <h1>Nature</h1>
+              <p class="price">£25.00, £20.00, £15.00</p>
+              <p>Some text about the photo</p>
+              <p><button>A3 - Add to Cart</button></p>
+              <p><button>A4 - Add to Cart</button></p>
+              <p><button>A5 - Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="card">
+          <img src="Assests/images/landscape.jpg" alt="landscape" style="width:100%">
+          <h1>Landscape</h1>
+              <p class="price">£25.00, £20.00, £15.00</p>
+              <p>Some text about the photo</p>
+              <p><button>A3 - Add to Cart</button></p>
+              <p><button>A4 - Add to Cart</button></p>
+              <p><button>A5 - Add to Cart</button></p>
+        </div>
+    </div>
     
+    <div class="col-sm-4">
+        <div class="card">
+          <img src="Assests/images/countryside.jpg" alt="countryside" style="width:100%">
+          <h1>Countryside</h1>
+              <p class="price">£25.00, £20.00, £15.00</p>
+              <p>Some text about the photo</p>
+              <p><button>A3 - Add to Cart</button></p>
+              <p><button>A4 - Add to Cart</button></p>
+              <p><button>A5 - Add to Cart</button></p>
+        </div>
+    </div>
+</div>
+    
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="canvas">Framed</h2>
+        </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+          <img src="Assests/images/woods.jpg" alt="woods" style="width:100%">
+          <h1>Woods</h1>
+              <p class="price">£20.00, £15.00, £10.00</p>
+              <p>Some text about the photo</p>
+              <p><button>A3 - Add to Cart</button></p>
+              <p><button>A4 - Add to Cart</button></p>
+              <p><button>A5 - Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="card">
+          <img src="Assests/images/endangered.jpg" alt="endangered" style="width:100%">
+          <h1>Garden</h1>
+              <p class="price">£20.00, £15.00, £10.00</p>
+              <p>Some text about the photo</p>
+              <p><button>A3 - Add to Cart</button></p>
+              <p><button>A4 - Add to Cart</button></p>
+              <p><button>A5 - Add to Cart</button></p>
+        </div>
+    </div>
+    
+    <div class="col-sm-4">
+        <div class="card">
+          <img src="Assests/images/nature.jpg" alt="nature" style="width:100%">
+          <h1>Nature</h1>
+              <p class="price">£20.00, £15.00, £10.00</p>
+              <p>Some text about the photo</p>
+              <p><button>A3 - Add to Cart</button></p>
+              <p><button>A4 - Add to Cart</button></p>
+              <p><button>A5 - Add to Cart</button></p>
+        </div>
+    </div>
+</div>
+
+
+         
     </section>
 
-    <footer class="bottom">
+    <footer class="container-fluid bottom">
     <div id="footer-details" class="row">
         <div class="col-sm-12">
             <p class="address">Address</p>

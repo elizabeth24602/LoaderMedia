@@ -105,26 +105,40 @@
     </header>
 
     <section>
-<div class="row">
-    <div class="col-sm-12">
-        <h3>Purchase</h3>
+        <div class="row">
+            <div class="col-sm-12">
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Purchase</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="cars.html">Cars</a>
+                <a href="landscape.html">Landscape</a>
+                <a href="animals.html">Animals</a>
+          </div>
+        </div>
     </div>
 </div>
-         <div class="row no-gutters">
-            <div class="col">
-                <ul id="nav" class="list-inline menucontainer">
-                    <li class="col-4 col-sm-2 ui-menu-color-bio list-inline-item menuitem">
-                        <a href="cars.html" class="hvr-underline-from-center"><span>Cars</span></a>
-                    </li>
-                     <li class="col-4 col-sm-2 ui-menu-color-photos list-inline-item menuitem">
-                        <a href="landscape.html" class="hvr-underline-from-center"><span>Landscape</span></a>
-                    </li>
-                    <li class="col-4 col-sm-2 ui-menu-color-pricing list-inline-item menuitem">
-                        <a href="animals.html" class="hvr-underline-from-center"><span>Animals</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
         
         <div id="highcharts--uwbVxyR"><script src="https://cloud.highcharts.com/inject/-uwbVxyR/" defer="defer"></script></div>
         

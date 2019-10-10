@@ -95,138 +95,88 @@
                 </ul>
             </div>
         </div>
-        
-    <div class="row">
-            <div class="col-sm-12">
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Purchase</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="cars.html">Cars</a>
-                <a href="landscape.html">Landscape</a>
-                <a href="animals.html">Animals</a>
-          </div>
-        </div>
-    </div>
-</div>
 
-<script>
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-        
-        <div class="row no-gutters">
-            <div class="col headings">
-                <h3 class="name3">Animals</h3>
-            </div>
-        </div>
     </header>
 
     <section>
-    
-    <div class="row">
-        <div class="col-sm-12">
-            <h2 class="canvas">Canvas</h2>
-        </div>
-    </div>
-    
-    <div class="row">
-    <div class="col-sm-4">
-        <div class="card">
-          <img src="Assests/images/bryn.jpg" alt="bryn" style="width:100%">
-          <h1>Bryn</h1>
-              <p class="price">£25.00, £20.00, £15.00</p>
-              <p>Some text about the photo</p>
-              <p><button>A3 - Add to Cart</button></p>
-              <p><button>A4 - Add to Cart</button></p>
-              <p><button>A5 - Add to Cart</button></p>
-        </div>
-    </div>
+<h2 class="checkout">Cart & Checkout</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city">
 
-    <div class="col-sm-4">
-        <div class="card">
-          <img src="Assests/images/lark.jpg" alt="lark" style="width:100%">
-          <h1>Lark</h1>
-              <p class="price">£25.00, £20.00, £15.00</p>
-              <p>Some text about the photo</p>
-              <p><button>A3 - Add to Cart</button></p>
-              <p><button>A4 - Add to Cart</button></p>
-              <p><button>A5 - Add to Cart</button></p>
-        </div>
-    </div>
-    
-    <div class="col-sm-4">
-        <div class="card">
-          <img src="Assests/images/horses.jpg" alt="horses" style="width:100%">
-          <h1>Horses</h1>
-              <p class="price">£25.00, £20.00, £15.00</p>
-              <p>Some text about the photo</p>
-              <p><button>A3 - Add to Cart</button></p>
-              <p><button>A4 - Add to Cart</button></p>
-              <p><button>A5 - Add to Cart</button></p>
-        </div>
-    </div>
-</div>
-    
-    <div class="row">
-        <div class="col-sm-12">
-            <h2 class="canvas">Framed</h2>
-        </div>
-    </div>
-    
-    <div class="row">
-    <div class="col-sm-4">
-        <div class="card">
-          <img src="Assests/images/bryn.jpg" alt="bryn" style="width:100%">
-          <h1>Bryn</h1>
-              <p class="price">£20.00, £15.00, £10.00</p>
-              <p>Some text about the photo</p>
-              <p><button>A3 - Add to Cart</button></p>
-              <p><button>A4 - Add to Cart</button></p>
-              <p><button>A5 - Add to Cart</button></p>
-        </div>
-    </div>
+            <div class="row">
+              <div class="col-50">
+                <label for="state">County</label>
+                <input type="text" id="state" name="state">
+              </div>
+              <div class="col-50">
+                <label for="zip">Postcode</label>
+                <input type="text" id="zip" name="zip">
+              </div>
+            </div>
+          </div>
 
-    <div class="col-sm-4">
-        <div class="card">
-          <img src="Assests/images/lark.jpg" alt="lark" style="width:100%">
-          <h1>Lark</h1>
-              <p class="price">£20.00, £15.00, £10.00</p>
-              <p>Some text about the photo</p>
-              <p><button>A3 - Add to Cart</button></p>
-              <p><button>A4 - Add to Cart</button></p>
-              <p><button>A5 - Add to Cart</button></p>
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CSV</label>
+                <input type="text" id="cvv" name="cvv">
+              </div>
+            </div>
+          </div>
+          
         </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
     </div>
-    
-    <div class="col-sm-4">
-        <div class="card">
-          <img src="Assests/images/horses.jpg" alt="horses" style="width:100%">
-          <h1>Horses</h1>
-              <p class="price">£20.00, £15.00, £10.00</p>
-              <p>Some text about the photo</p>
-              <p><button>A3 - Add to Cart</button></p>
-              <p><button>A4 - Add to Cart</button></p>
-              <p><button>A5 - Add to Cart</button></p>
-        </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Car1 A3 Canvas</a> <span class="price">£25</span></p>
+      <p><a href="#">Bryn A5 Framed</a> <span class="price">£10</span></p>
+      <p><a href="#">Lark A5 Canvas</a> <span class="price">£15</span></p>
+      <p><a href="#">Car7 A4 Framed</a> <span class="price">£15</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$60</b></span></p>
     </div>
+  </div>
 </div>
 
-
-         
     </section>
 
     <footer class="container-fluid bottom">

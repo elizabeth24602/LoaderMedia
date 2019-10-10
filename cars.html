@@ -96,24 +96,37 @@
             </div>
         </div>
         
-         <div class="row no-gutters">
+                <div class="row">
             <div class="col-sm-12">
-                <ul id="nav" class="list-inline menucontainer">
-                    <li class="col-4 col-sm-2 ui-menu-color-pricing list-inline-item menuitem">
-                        <a href="pricing.html" class="hvr-underline-from-center"><span>Back to Pricing</span></span></a>
-                    </li>
-                    <li class="col-4 col-sm-2 ui-menu-color-cars list-inline-item menuitem">
-                        <a href="cars.html" class="hvr-underline-from-center"><span>Cars</span></a>
-                    </li>
-                     <li class="col-4 col-sm-2 ui-menu-color-landscape list-inline-item menuitem">
-                        <a href="landscape.html" class="hvr-underline-from-center"><span>Landscape</span></a>
-                    </li>
-                    <li class="col-4 col-sm-2 ui-menu-color-animals list-inline-item menuitem">
-                        <a href="animals.html" class="hvr-underline-from-center"><span>Animals</span></a>
-                    </li>
-                </ul>
-            </div>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Purchase</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="cars.html">Cars</a>
+                <a href="landscape.html">Landscape</a>
+                <a href="animals.html">Animals</a>
+          </div>
         </div>
+    </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
         
         <div class="row no-gutters">
             <div class="col headings">

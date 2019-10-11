@@ -251,17 +251,15 @@ body {
 
 .bio {
   font-family: "Beth+Ellen";
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .camera2 {
-  display: block;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 50%;
 }
 
 * {
@@ -302,6 +300,10 @@ body {
   padding: 10px;
   font-family: "Beth+Ellen";
   text-align: center;
+}
+
+.column {
+  display: none;
 }
 
 .show {

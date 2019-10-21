@@ -111,9 +111,9 @@
         </div>
       </div>
       
-      <div class="container">
+      <div class="container hereford">
       <div class="row">
-      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 bio">
+      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 bio">
           <p>Born in Herefordshire, England I was raised and currently live in Ledbury. It is a quaint town with some amazing lanscapes just sitting on your doorstep waiting for a picture to be taken.<br>
           Taking pictures has been a part of my life for as long as I can remember. As a child, I would routinely shoot portraits of our family dogs.<br>
           Although creating images has been a constant passion and interest, I spent my college years studying agriculture. I got a job looking after the landscape of the Malvern Hills. I always persured photography on the side, as a hobby more than anything, just messing around with light and shadow.<br>
@@ -279,10 +279,11 @@ for (var i = 0; i < btns.length; i++) {
     
     </section>
 
-    <footer class="bottom">
+ <footer class="container-fluid bottom">
     <div id="footer-details" class="row">
         <div class="col-sm-12">
             <p class="address">Address</p>
+            <div id="map"></div>
         </div>
     </div>
         <div class="row">
@@ -333,6 +334,37 @@ for (var i = 0; i < btns.length; i++) {
             </div>
         </div>
     </footer>
+    
+<script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 52.3555,
+                    lng: 1.1743
+                }
+            });
+           var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+            var locations = [{
+                lat: 52.03639,
+                lng: -2.42635
+            }];
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+    </script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAimZny8JPs06sLqEyrPB2BkzbYOLjL910&callback=initMap"></script>
+
+<script src="static/js/sendEmail.js
+"></script>
 
 </body>    
 </html>

@@ -121,11 +121,14 @@
         <img class="laptop" src="Assests/images/laptop.jpg" alt="laptop">
             </div>
         </div>
+        <div class="container">
         <div class="row bg-color-contact">
             <div class="col-sm-12">
                 <h3 class="contact-heading uppercase">Have an enquiery?</h3>
                 <h5 class="uppercase text-center">Send us an Email</h5>
             </div>
+            </div>
+            <div class="container">
             <div class="col-sm-12 center-form">
                 <form onsubmit="return sendMail(this);">
                 <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
@@ -134,18 +137,20 @@
                 <button type="submit" class="btn btn-secondary center-block">Send Enquiery</button>
                 </form>
             </div>
+            </div>
+        <div class="container">
         <div class="col-sm-12">
             <h3 class="chat">Prefer to have a chat?</h3>
            </div>
         <div class="col-sm-12">
             <img class="phone" src="Assests/images/phone.jpg" alt="phone"></img>
         </div>
-        <div class="col-sm-6">
+        <div class="row">
+        <div class="col-sm-12">
             <h3 class="number">Office hours are from 9-6<br>
             Tel: 01527 444 384</h3>
         </div>
-        <div class="col-sm-6">
-            <img class="phone" src="Assests/images/camera.jpg" alt="phone"></img>
+        </div>
         </div>
     </section>
 
@@ -210,17 +215,31 @@
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 3,
                 center: {
-                    lat: 46.619261,
-                    lng: -33.134766
+                    lat: 52.3555,
+                    lng: 1.1743
                 }
             });
+           var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+            var locations = [{
+                lat: 52.03639,
+                lng: -2.42635
+            }];
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
         }
-</script>
-
+    </script>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUmOGiZlAX3mZN80E9EyM0bN12qOqrjCk&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAimZny8JPs06sLqEyrPB2BkzbYOLjL910&callback=initMap"></script>
 
-<script src="static/js/sendEmail.js"></script>
+<script src="static/js/sendEmail.js
+"></script>
 
 </body>    
 </html>

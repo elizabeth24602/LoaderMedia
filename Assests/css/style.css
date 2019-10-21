@@ -23,7 +23,7 @@
 /*-------------------------------Background */
 
 body {
-  background-color: #dbceb0;
+  background-color:	 #dbceb0;
 }
 
 /*-------------------------------Social */
@@ -153,7 +153,7 @@ body {
 /*-------------------------------Home */
 
 .index {
-  background-image: url("../images/bryn.jpg");
+  background-image: url("../images/bushes.jpg");
   background-color: #fff5ee;
   height: 500px;
   background-position: cover;
@@ -169,7 +169,7 @@ body {
   height: auto;
 	
   /* Set up positioning */
-  position: fixed;
+  position:absolute;
   top: 0;
   left: 0;
 }
@@ -249,17 +249,26 @@ body {
   margin-bottom: 20px;
 }
 
+.hereford {
+  background-color: #666633;
+}
+
 .bio {
   font-family: "Beth+Ellen";
-  text-align: left;
-  margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  text-align: justify;
+  padding: 20px;
+  margin: 20px;
+  color: #ffffff;
 }
 
 .camera2 {
-  width: 50%;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff5ee;
 }
 
 * {
@@ -302,7 +311,15 @@ body {
   text-align: center;
 }
 
-.column {
+.nature {
+  display: none;
+}
+
+.cars {
+  display: none;
+}
+
+.animals {
   display: none;
 }
 
@@ -615,7 +632,7 @@ img.hover-shadow {
   padding: 0 16px;
 }
 
-.container {
+.container-checkout {
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
@@ -764,10 +781,10 @@ button[type="submit"] {
 }
 
 .number {
-     font-family: "pacifico";
+    font-family: "Beth+Ellen";
     font-weight: 100;
     margin-top: 125px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
     color: #808080;
 }
@@ -789,3 +806,8 @@ button[type="submit"] {
   width: 90%;
   border-radius: 8px;
 }
+
+
+/*-------------------------------map API */
+
+div#map {min-height: 360px;}

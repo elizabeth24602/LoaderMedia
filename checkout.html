@@ -102,7 +102,7 @@
 <h2 class="checkout">Cart & Checkout</h2>
 <div class="row">
   <div class="col-75">
-    <div class="container">
+    <div class="container container-checkout">
       <form action="/action_page.php">
       
         <div class="row">
@@ -165,7 +165,7 @@
     </div>
   </div>
   <div class="col-25">
-    <div class="container">
+    <div class="container container-checkout">
       <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
       <p><a href="#">Car1 A3 Canvas</a> <span class="price">£25</span></p>
       <p><a href="#">Bryn A5 Framed</a> <span class="price">£10</span></p>
@@ -179,10 +179,11 @@
 
     </section>
 
-    <footer class="container-fluid bottom">
+  <footer class="container-fluid bottom">
     <div id="footer-details" class="row">
         <div class="col-sm-12">
             <p class="address">Address</p>
+            <div id="map"></div>
         </div>
     </div>
         <div class="row">
@@ -233,6 +234,37 @@
             </div>
         </div>
     </footer>
+    
+<script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                    lat: 52.3555,
+                    lng: 1.1743
+                }
+            });
+           var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+            var locations = [{
+                lat: 52.03639,
+                lng: -2.42635
+            }];
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+    </script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAimZny8JPs06sLqEyrPB2BkzbYOLjL910&callback=initMap"></script>
+
+<script src="static/js/sendEmail.js
+"></script>
 
 </body>    
 </html>

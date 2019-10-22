@@ -153,14 +153,14 @@ body {
 /*-------------------------------Home */
 
 .index {
-  background-image: url("../images/bushes.jpg");
+  background-image: url("../images/bryn.jpg");
   background-color: #fff5ee;
-  height: 500px;
-  background-position: cover;
+  height: 100vh;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   min-height: 100%;
   min-width: 1024px;
 	
@@ -172,6 +172,14 @@ body {
   position:absolute;
   top: 0;
   left: 0;
+} 
+
+@media only screen and (max-width: 767px) {
+  .index {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+    background-image: url(../images/bryn.jpg);
+  }
 }
 
 body {
@@ -255,10 +263,11 @@ body {
 
 .bio {
   font-family: "Beth+Ellen";
-  text-align: justify;
+  text-align: justify
   padding: 20px;
   margin: 20px;
   color: #ffffff;
+  font-size: 20px;
 }
 
 .camera2 {
@@ -276,7 +285,8 @@ body {
 }
 
 .portfolio {
-  font-family: "Beth+Ellen"
+  font-family: "Beth+Ellen";
+  margin-top: 20px;
 }
 
 .main {
@@ -309,6 +319,7 @@ body {
   padding: 10px;
   font-family: "Beth+Ellen";
   text-align: center;
+  font-size: 20px;
 }
 
 .nature {
@@ -335,6 +346,7 @@ body {
   color: #ffffff;
   font-family: "Beth+Ellen";
   cursor: pointer;
+  font-size: 20px;
 }
 
 .btn:hover {
@@ -375,8 +387,7 @@ body {
   overflow: hidden;
   font-family: "Beth+Ellen";
   color: #808080;
-  text-align: left;
-  width: 50%
+  text-align: justify;
   font-size: 20px;
 }
 
@@ -501,7 +512,7 @@ img.hover-shadow {
 .dropbtn {
   background-color: #666633;
   color: white;
-  font-family: "Pacifico";
+  font-family: "Beth+Ellen";
   padding: 16px;
   margin-top: 20%;
   margin-left: 50%;
@@ -538,7 +549,7 @@ img.hover-shadow {
 
 .dropdown-content a {
   color: #808090;
-  font-family: "Pacifico";
+  font-family: "Beth+Ellen";
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
@@ -549,10 +560,29 @@ img.hover-shadow {
 
 .show {display: block;}
 
+.name4 {
+    font-family: "Amatic SC";
+    font-weight: 60;
+    font-size: 50px;
+    margin-top: 70px;
+    text-align: center;
+    color: #595959;  
+}
+
+.pricing {
+    font-family: "Beth+Ellen";
+    font-weight: 60;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #595959;  
+}
+
 /*-------------------------------Cars, Landscape, Anoimals */
 .canvas {
   color: #808080;
-  font-family: "Pacifico";
+  font-family: "Amatic SC";
+  font-size: 40px;
   text-align: left;
   margin-left: 30px;
   margin-bottom: 20px;

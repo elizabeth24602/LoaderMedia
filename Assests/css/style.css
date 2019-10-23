@@ -571,7 +571,8 @@ img.hover-shadow {
     font-size: 50px;
     margin-top: 70px;
     text-align: center;
-    color: #595959;  
+    color: #ffffff;
+    background-color: #666633;
 }
 
 .pricing {

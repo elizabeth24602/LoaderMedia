@@ -173,11 +173,17 @@ body {
   left: 0;
 } 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 640px) {
   .index {
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
-    background-image: url(../images/bryn.jpg);
+    background-image: url(../images/bryn1.jpg);
+    text-align: left;
+  }
+  
+  .name {
+    text-align: left;
+    font-size: 50px;
   }
 }
 
@@ -262,7 +268,7 @@ body {
 
 .bio {
   font-family: "Beth+Ellen";
-  text-align: justify
+  text-align: justify;
   padding: 20px;
   margin: 20px;
   color: #ffffff;
@@ -382,10 +388,10 @@ body {
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: #dbceb0;
+  background-color: #666633;
   overflow: hidden;
   font-family: "Beth+Ellen";
-  color: #808080;
+  color: #ffffff;
   text-align: justify;
   font-size: 20px;
 }

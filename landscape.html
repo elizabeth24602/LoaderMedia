@@ -59,62 +59,46 @@
                 </ul>
             </div>
         </div>
-         <div class="row no-gutters">
-            <div class="col">
-                <ul id="nav" class="list-inline menucontainer">
-                    <li class="col-4 col-sm-2 ui-menu-color-home list-inline-item menuitem">
-                        <a href="index.html" class="hvr-underline-from-center"><span>Home</span></a>
-                    </li>
-                    <li class="col-4 col-sm-2 ui-menu-color-bio list-inline-item menuitem">
-                        <a href="bio.html" class="hvr-underline-from-center"><span>Bio</span></a>
-                    </li>
-                     <li class="col-4 col-sm-2 ui-menu-color-photos list-inline-item menuitem">
-                        <a href="photos.html" class="hvr-underline-from-center"><span>Photos</span></a>
-                    </li>
-                    <li class="col-4 col-sm-2 ui-menu-color-pricing list-inline-item menuitem">
-                        <a href="pricing.html" class="hvr-underline-from-center"><span>Pricing</span></a>
-                    </li>
-                    <li class="col-4 col-sm-2 ui-menu-color-gallery list-inline-item menuitem">
-                        <a href="gallery.html" class="hvr-underline-from-center"><span>Gallery</span></a>
-                    </li>
-                    <li class="col-4 col-sm-2 ui-menu-color-contact list-inline-item menuitem">
-                        <a href="contact.html" class="hvr-underline-from-center"><span>Contact</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-12">
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Purchase</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="cars.html">Cars</a>
-                <a href="landscape.html">Landscape</a>
-                <a href="animals.html">Animals</a>
-          </div>
-        </div>
-    </div>
-</div>
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">Menu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<script>
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active-item">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bio.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="photos.html">Photography</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Purchase
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="cars.html">Cars</a>
+          <a class="dropdown-item" href="animals.html">Animals</a>
+          <a class="dropdown-item" href="landscape.html">Landscape</a>
+        </div>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
         <div class="row no-gutters">
             <div class="col headings">
                 <h3 class="name3">Landscape</h3>

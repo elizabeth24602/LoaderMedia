@@ -12,12 +12,13 @@
       <link rel="stylesheet" href="Assests/images/" type="text/css" />
       <link rel="stylesheet" href="Assests/css/style.css" type="text/css" />
       <title>Loader Media</title>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
       <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
       <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
-       <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    </head>
    <body>
-      <header class="container-fluid">
+      <header class="container-fluid-2">
          <div id="social-links" class="row">
             <div class="col-sm-4">
                <ul class="list-inline social-links">
@@ -60,52 +61,58 @@
                </ul>
             </div>
          </div>
-<nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#">Menu</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active-item">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="bio.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="photos.html">Photography</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="pricing.html">Pricing</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="gallery.html">Gallery</a></a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Purchase
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="cars.html">Cars</a>
-          <a class="dropdown-item" href="animals.html">Animals</a>
-          <a class="dropdown-item" href="landscape.html">Landscape</a>
-        </div>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+         <div class="container xs-12 sm-12 md-12 lg-12">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="name"><a class="title" href="index.html">Loader Media</a></h1>
+               </div>
+            </div>
+         </div>
+         <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active-item">
+                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="bio.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="photos.html">Photography</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="gallery.html">Gallery</a></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Purchase
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="cars.html">Cars</a>
+                        <a class="dropdown-item" href="animals.html">Animals</a>
+                        <a class="dropdown-item" href="landscape.html">Landscape</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <section>
          <div class="row no-gutters">
             <div class="col headings">
                <h3 class="name3">Photography</h3>
             </div>
          </div>
-      </header>
-      <section>
          <div class="row">
             <div class="col-sm-12">
                <button class="accordion">Car Photography</button>
@@ -275,146 +282,78 @@
                </div>
             </div>
          </div>
-         <script> //used W3 Schools to help with JavaScript
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                  panel.style.display = "none";
-                } else {
-                  panel.style.display = "block";
-                }
-              });
-            }
-         </script>
-        <div class="row">
-  <div class="column">
-    <img src="Assests/images/car1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Assests/images/lark.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Assests/images/landscape.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img src="Assests/images/oldcars.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-    <div class="column">
-    <img src="Assests/images/bushes.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-  </div>
-    <div class="column">
-    <img src="Assests/images/horses.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-  </div>
-</div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <img src="Assests/images/car1.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-      <img src="Assests/images/lark.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img src="Assests/images/landscape.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img src="Assests/images/oldcars.jpg" style="width:100%">
-    </div>
-    
-        <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-      <img src="Assests/images/bushes.jpg" style="width:100%">
-    </div>
-    
-        <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-      <img src="Assests/images/horses.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="Assests/images/car1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Assests/images/lark.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Assests/images/landscape.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Assests/images/oldcars.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-        <div class="column">
-      <img class="demo cursor" src="Assests/images/bushes.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
-    </div>
-        <div class="column">
-      <img class="demo cursor" src="Assests/images/horses.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
-    </div>
-  </div>
-</div>
-
-         <script>
-            function openModal() {
-              document.getElementById("myModal").style.display = "block";
-            }
-            
-            function closeModal() {
-              document.getElementById("myModal").style.display = "none";
-            }
-            
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("demo");
-              var captionText = document.getElementById("caption");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";
-              dots[slideIndex-1].className += " active";
-              captionText.innerHTML = dots[slideIndex-1].alt;
-            }
-         </script>
+         <div class="row">
+            <div class="column">
+               <img src="Assests/images/car1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+               <img src="Assests/images/lark.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+               <img src="Assests/images/landscape.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+               <img src="Assests/images/oldcars.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+               <img src="Assests/images/bushes.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+               <img src="Assests/images/horses.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+         </div>
+         <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+               <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="Assests/images/car1.jpg" style="width:100%">
+               </div>
+               <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="Assests/images/lark.jpg" style="width:100%">
+               </div>
+               <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="Assests/images/landscape.jpg" style="width:100%">
+               </div>
+               <div class="mySlides">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="Assests/images/oldcars.jpg" style="width:100%">
+               </div>
+               <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="Assests/images/bushes.jpg" style="width:100%">
+               </div>
+               <div class="mySlides">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="Assests/images/horses.jpg" style="width:100%">
+               </div>
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+               <div class="caption-container">
+                  <p id="caption"></p>
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="Assests/images/car1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="Assests/images/lark.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="Assests/images/landscape.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="Assests/images/oldcars.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="Assests/images/bushes.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+               </div>
+               <div class="column">
+                  <img class="demo cursor" src="Assests/images/horses.jpg" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+               </div>
+            </div>
+         </div>
       </section>
       <footer class="container-fluid bottom">
          <div id="footer-details" class="row">
@@ -471,6 +410,65 @@
             </div>
          </div>
       </footer>
+      <!-- Accordion -->
+      <script> //used W3 Schools to help with JavaScript
+         var acc = document.getElementsByClassName("accordion");
+         var i;
+         
+         for (i = 0; i < acc.length; i++) {
+           acc[i].addEventListener("click", function() {
+             this.classList.toggle("active");
+             var panel = this.nextElementSibling;
+             if (panel.style.display === "block") {
+               panel.style.display = "none";
+             } else {
+               panel.style.display = "block";
+             }
+           });
+         }
+      </script>
+      <!-- Lightbox -->
+      <script>
+         function openModal() {
+            document.getElementById("myModal").style.display = "block";
+          }
+          
+          function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+          }
+          
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+      </script>
+      <!-- Google Maps API -->
       <script>
          function initMap() {
              var map = new google.maps.Map(document.getElementById("map"), {
@@ -498,7 +496,6 @@
       </script>
       <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAimZny8JPs06sLqEyrPB2BkzbYOLjL910&callback=initMap"></script>
-      <script src="static/js/sendEmail.js
-         "></script>
+      <script src="static/js/sendEmail.js"></script>
    </body>
 </html>
